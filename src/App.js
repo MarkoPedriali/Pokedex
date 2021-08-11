@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Info from "./componentes/Info";
+import Cardlist from "./componentes/Cardlist";
+import './styles/global.scss'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+   <div className="app">
+    <BrowserRouter> {/* avisa ao nevegador que aqui tem rotas */}
+      <Switch>{/* aqui avisa que tem escolhas, no caso cards dos pokemons */}
+        <Route path="/" exact={true} component={Cardlist}/>{/*ver exact no readme */}
+        <Route path="/sobre/:id" component={Info}/> {/*path = caminho da rota */}
+      </Switch>
+    </BrowserRouter>
+   
+   </div>
+
   );
 }
 

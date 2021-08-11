@@ -1,0 +1,333 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.app{
+    
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background: rgb(25,25,136);
+    background: linear-gradient(90deg, rgba(25,25,136,1) 32%, rgba(62,62,194,1) 66%, rgba(134,134,228,1) 100%); 
+
+    .type-info{
+        margin-right: 2rem;
+
+        p{
+            margin-bottom: 0.7rem;
+        }
+    }
+
+    .info-footer{
+        background-color: rgb(243, 239, 7);
+        width: 25rem;
+        padding: 1rem;
+        text-align: center;
+        color: rgb(22, 22, 22);
+        font-size: 2rem;
+        font-family: 'Fredoka One', cursive;
+        text-decoration: none;
+        margin-left: 1.3rem;
+        border-radius: 1.8rem;  
+        position: relative;
+        margin-top: 1rem;    
+    }
+
+    .movimentos{
+        max-height: 20%;
+        
+    }
+
+    .tipos{
+        font-family: 'Fredoka One', cursive;
+    }
+
+    &__category-info{
+        
+        &--grass{
+            background-color: green;    
+            padding: 3%;
+            border-radius: 16%;
+        }
+        
+        &--water{
+            background-color: rgb(81, 81, 221);   
+            padding: 3%;
+            border-radius: 16%;
+        }
+        
+        &--electric{
+            background-color: rgb(187, 187, 14);
+            color: rgb(247, 248, 245);
+            padding: 3%;
+            border-radius: 16%;
+        }
+
+        &--fire{
+            background-color: rgb(255, 18, 1);
+            padding: 3%;
+            border-radius: 16%;
+        }
+        
+        &--rock{
+            background-color: rgb(75, 75, 73);
+            padding: 3%;
+            border-radius: 16%;
+        }
+
+        &--normal{
+            background-color: rgb(44, 236, 163);
+            color: rgb(241, 247, 246);
+            padding: 3%;
+            border-radius: 16%;
+        }
+
+        &--fairy{
+            background-color: rgb(202, 22, 97);
+            padding: 3%;
+            border-radius: 16%;
+        }
+
+        &--steel{
+            background-color: rgb(37, 35, 35);
+            padding: 3%;
+            border-radius: 16%;
+        }
+
+        &--ground{
+            background-color: rgb(233, 134, 22);
+            padding: 2%;
+            margin-right: 2%;
+            border-radius: 16%;
+        }
+
+        &--poison{
+            background-color: rgb(172, 25, 172);
+            padding: 3%;
+            border-radius: 16%;
+        }
+
+        &--bug{
+            background-color: rgb(187, 79, 79);
+            padding: 3%;
+            border-radius: 16%;
+        }
+
+        &--dark{
+            background-color: rgb(17, 16, 16);
+            padding: 3%;
+            border-radius: 16%;
+        }
+
+        &--ice{
+            background-color: rgb(196, 235, 229);
+            padding: 3%;
+            border-radius: 16%;
+        }
+
+        &--flying{
+            background-color: rgb(132, 194, 245);
+            padding: 3%;
+            border-radius: 16%;
+        }
+
+        &--psychic{
+            background-color: rgb(125, 6, 204);
+            padding: 3%;
+            border-radius: 16%;
+        }
+
+        &--fighting{
+            background-color: rgb(228, 131, 131);
+            padding: 3%;
+            border-radius: 16%;
+            color: rgb(241, 241, 240);
+        }
+
+        &--ghost{
+            background-color: rgb(160, 158, 158);
+            padding: 3%;
+            border-radius: 16%;
+            color: rgb(252, 252, 248);
+        }
+    }
+
+    &__info{
+
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        color: white;
+        background: rgb(25,25,136);
+        
+    
+
+        &__info-card{
+            margin-top: 1rem;
+            width: 140vh;
+            height: 100%;
+            border-radius: 1.2rem;
+            justify-content: center;
+            box-shadow: 1px 0px 13px 0px rgba(245, 241, 2, 0.81);
+            -webkit-box-shadow: 1px 0px 13px 0px rgba(247, 211, 8, 0.81);
+            -moz-box-shadow: 1px 0px 13px 0px rgba(240, 236, 8, 0.81);
+            
+
+            h1{
+                justify-self: center;
+                color: rgb(255, 217, 0);
+                width: 50%;
+                text-align: center;
+                font-family: 'Fredoka One', cursive;
+                font-size: 3rem;
+                letter-spacing: 0.3rem;
+            }
+
+           &-info-body{
+               
+               display: flex;
+               justify-content: center;
+
+               img{
+                   height: 25rem;   
+               }
+           }
+        }
+    }
+
+    &__list{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: auto;
+
+       
+        &__card{
+            background-color: rgba(243, 208, 9, 0.856);
+            padding: 2rem;
+            margin: 1%; 
+            transition: 0.5s;
+          
+           
+            &__link{
+                max-width: max-content;
+            }
+          
+
+            & img{
+  
+                width: 12rem;
+                height: 12rem;   
+            }
+
+            &__category{
+
+                margin-top: 0.8rem;
+                justify-self: center;
+
+                span{
+                    
+                    margin-right: 0.5rem;
+                    padding: 0.4rem;
+                    border-radius: 0.7rem;
+                    color: white;
+                }
+
+
+                &--grass{
+                    background-color: green;
+    
+                }
+                
+                &--water{
+                    background-color: rgb(81, 81, 221);
+     
+                }
+                
+                &--electric{
+                    background-color: rgb(187, 187, 14);
+                    color: yellowgreen;
+                }
+
+                &--fire{
+                    background-color: rgb(255, 18, 1);
+                }
+                
+                &--rock{
+                    background-color: rgb(75, 75, 73);
+                }
+
+                &--normal{
+                    background-color: rgb(44, 236, 163);
+                    color: rgb(91, 236, 229);
+                }
+
+                &--fairy{
+                    background-color: rgb(202, 22, 97);
+                }
+
+                &--steel{
+                    background-color: rgb(37, 35, 35);
+                }
+
+                &--ground{
+                    background-color: rgb(233, 134, 22);
+                }
+
+                &--poison{
+                    background-color: rgb(172, 25, 172);
+                }
+
+                &--bug{
+                    background-color: rgb(187, 79, 79);
+                }
+
+                &--dark{
+                    background-color: rgb(17, 16, 16);
+                }
+
+                &--ice{
+                    background-color: rgb(196, 235, 229);
+                }
+
+                &--flying{
+                    background-color: rgb(132, 194, 245);
+                }
+
+                &--psychic{
+                    background-color: rgb(125, 6, 204);
+                }
+
+                &--fighting{
+                    background-color: rgb(228, 131, 131);
+                    color: yellow;
+                }
+
+                &--ghost{
+                    background-color: rgb(160, 158, 158);
+                    color: yellow;
+                }
+            }
+
+          
+        }
+
+        
+    }
+}
+
+
+
+
+
+
+
+
+
